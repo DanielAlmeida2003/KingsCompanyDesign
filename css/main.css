@@ -1,18 +1,51 @@
-
+html,body{
+    display: table;
+}
 * {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans';
+    box-sizing: border-box;
 }
 
 body{
     overflow: hidden;
+   
 }
 
+/*Video Backgroud*/
+
+.content{
+
+    background-color: rgba(35, 35,35, 0.8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+.backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  z-index: -1;
+  min-height: 100%;
+}
+
+
+/*Cabeçalho*/
+
 header{
-    background-color: rgb(15, 15, 15);
-    padding: 5px;
-    text-align: right;
+
+    /*background-color: rgb(15, 15, 15)*/
+    background-color: transparent;
+    padding: 1px;
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: center;
     padding-right: 70px;
 }
 
@@ -27,13 +60,16 @@ header a:hover{
     color: #ffc400;
 }
 
-.nav-bar {
+/*Menu*/
 
-    background-color: #1d1d1d;
-    box-shadow: 0px 3px 10px #464646;
+.nav-bar {
+    z-index: 1;
+    /*background-color: #1d1d1d;*/
+    background-color: transparent;
+    
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
+    padding: 1rem 4rem;
     font-weight: bold;
 
 }
@@ -48,9 +84,6 @@ header a:hover{
     width: 110px;
 }
 
-.logo h1 {
-    color: #fff;
-}
 
 .nav-list {
     display: flex;
@@ -76,7 +109,7 @@ header a:hover{
 
 .nav-link {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: bold;
     transition: .3s all ease-in-out;
 }
@@ -98,13 +131,15 @@ header a:hover{
     padding: 25px 30px;
     border-radius: 5px;
     background-color: #ffc400;
+    border: 2px solid #ffc400;
     transition: .3s ease-in-out;
     cursor: pointer;
 }
 
 .login-button a button:hover{
     color: #ffc400;
-    background-color: black;
+    background-color: #1d1d1d;
+    
 }
 
 .mobile-menu-icon {
@@ -114,60 +149,113 @@ header a:hover{
 
 .mobile-menu {
     display: none;
-    background-color: #1d1d1d;
+    background-color: transparent;
+    z-index: 100;
 }
 
+/*Main*/
+
+
+
+main .centerred{
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-left:2px solid #ffc400;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: wheat;
+    z-index: 99;
+
+}
+
+main .centerred h1{
+    text-transform: uppercase;
+    color: #ffc400;
+    margin-bottom: 20px;
+}
+
+/*Whatsapp*/
+
+/*Footer*/
+
 .footer{
-    background:rgb(15, 15, 15);
-    padding:30px 0px;
+
+    background-color: #1d1d1d;
+    padding:10px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
-    }
+
+}
+
+.bottom{
+    bottom: 0;
+    position: fixed;
+    width:100%;
+}
     
-    .footer .row{
+.footer .row{
     width:100%;
     margin:1% 0%;
-    padding:0.6% 0%;
+    padding:0.05% 0%;
     color:gray;
     font-size:0.8em;
-    }
+}
     
-    .footer .row a{
+.footer .row a{
     text-decoration:none;
     color:gray;
     transition:0.5s;
-    }
+}
     
-    .footer .row a:hover{
+.footer .row a:hover{
     color:#ffc400;
-    }
+ }
     
-    .footer .row ul{
+.footer .row ul{
     width:100%;
-    }
+}
     
-    .footer .row ul li{
+.footer .row ul li{
     display:inline-block;
     margin:0px 30px;
-    }
+}
     
-    .footer .row a i{
+ .footer .row a i{
     font-size:2em;
     margin:0% 1%;
-    }
+}
     
 @media screen and (max-width: 919px) {
-    .nav-bar {
-        padding: 1.5rem 4rem;
+
+    body{
+        overflow: visible;
+    }
+
+    header{
+        padding: 2px;
+        padding-top: 10px;
+    }
+
+    .nav-bar{
+        padding: 20px 20px 20px 30px;
     }
     .nav-item {
         display: none;
     }
+
+    .logo img{
+        width: 70px;
+    }
+
     .login-button {
         display: none;
     }
     .mobile-menu-icon {
         display: block;
+        margin-top: 0px;
     }
     .mobile-menu-icon button {
         background-color: transparent;
@@ -191,19 +279,37 @@ header a:hover{
     .mobile-menu .login-button button {
         width: 100%;
     }
+
+    main .centerred h1{
+        font-size: 20px;
+    }
+
+    main .centerred p{
+        font-size: 13px;
+    }
+
     .open {
         display: block;
     }
+
+    .bottom{
+        bottom: -190px;
+        position: absolute;
+        
+    }
+
     .footer{
-
-        text-align:left;
+        height: 190px;
         padding:5%;
+    }
 
+    .footer .row{
+        padding: auto;
     }
 
     .footer .row ul li{
 
-        display:block;
+        
         margin:10px 0px;
         text-align:left;
     }

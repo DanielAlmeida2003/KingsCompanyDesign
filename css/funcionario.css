@@ -1,0 +1,75 @@
+
+.contentFunc{
+
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.minTitle{
+
+    text-align: center;
+    padding: 10px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-top: 30px;
+
+}
+.title{
+
+    color: #b9963e;
+    text-align: center;
+    padding: 10px;
+    font-size: 60px;
+}
+
+.profileImage{
+
+    text-align: center;
+    margin: auto;
+    border:5px solid #b9963e;
+    border-radius: 100%;
+    width: 300px;    
+    object-fit: cover;
+
+}
+
+.contentFunc p{
+
+    margin: 20px;
+    text-align: justify;
+    padding: 50px;
+    background-color: rgb(179, 179, 179);
+    border-radius: 5px;
+
+}
+
+.socialMedia .iconSocialMedia{
+    padding: 10px;
+}
+
+.socialMedia .iconSocialMedia a{
+    text-decoration: none;
+    color: black;
+}
+
+.socialMedia .iconSocialMedia a i{
+
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #b9963e;
+    font-size: 20px;
+    transition: .3s ease-in;
+
+}
+
+.socialMedia .iconSocialMedia a i:hover{
+
+    color: #b9963e;
+    background-color: black;
+
+}
+

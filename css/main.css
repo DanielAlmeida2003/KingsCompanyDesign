@@ -1,6 +1,4 @@
-html,body{
-    display: table;
-}
+
 * {
     padding: 0;
     margin: 0;
@@ -67,10 +65,12 @@ header a:hover{
     /*background-color: #1d1d1d;*/
     background-color: transparent;
     
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 1rem 4rem;
     font-weight: bold;
+    transition: .3s ease-in;
 
 }
 
@@ -151,12 +151,11 @@ header a:hover{
     display: none;
     background-color: transparent;
     z-index: 100;
+ 
 }
 
+
 /*Main*/
-
-
-
 main .centerred{
     position: absolute;
     width: auto;
@@ -178,6 +177,32 @@ main .centerred h1{
 }
 
 /*Whatsapp*/
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 1px 1px 10px #25d366;
+    z-index:100;
+    transition: .1s ease-in;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.float:hover{
+
+    background-color: #03d450;
+}
+
 
 /*Footer*/
 
@@ -227,6 +252,30 @@ main .centerred h1{
     font-size:2em;
     margin:0% 1%;
 }
+
+@keyframes slide-up {
+
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(30%);
+    }
+    
+}
+
+
+@keyframes slide-down {
+
+    50%{
+        transform: translateY(50%);
+    }
+    0%{
+        transform: translateY(0%);
+    }
+    
+}
+
     
 @media screen and (max-width: 919px) {
 
@@ -290,6 +339,7 @@ main .centerred h1{
 
     .open {
         display: block;
+        animation: slide-up 0.5s forwards;
     }
 
     .bottom{

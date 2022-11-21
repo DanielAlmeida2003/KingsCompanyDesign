@@ -14,7 +14,7 @@
 
         <!-- Icons-->
         <script src="https://kit.fontawesome.com/fd2015e895.js" crossorigin="anonymous"></script>
-        <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/menuImages/Logo.png" type="image/x-icon">
 
         <!-- Google font -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
@@ -27,29 +27,24 @@
     </head>
 
     <body>
-
-        <div class="content">
-            
-        <!-- Cabeçalho-->
         <header>
+
             <a href="">
-                <i class="fa-brands fa-instagram"></i>
+                <img src="img/menuImages/england.png" alt="" srcset="">
             </a>
+
             <a href="">
-                <i class="fa-brands fa-youtube"></i>
+                <img src="img/menuImages/portugal.png" alt="" srcset="">
             </a>
-            <a href="">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
+
         </header>
+        <div class="content">
+
 
         <!-- Menu-->
         <nav class="nav-bar">
             <div class="logo">
-                <img src="img/Logo.png" alt="">
+                <img src="img/menuImages/Logo.png" alt="">
             </div>
             <div class="nav-list">
                 <ul>
@@ -57,7 +52,6 @@
                     <li class="nav-item"><a href="equipa.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Portugal</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Partnerships</a></li>
                 </ul>
             </div>
             <div class="login-button">
@@ -69,7 +63,9 @@
             </div>
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="./img/svg/menu_white_36dp.svg" alt=""></button>
+                <button onclick="menuShow()">
+                    <i id="icon" class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </nav>
         
@@ -80,7 +76,6 @@
                 <li class="nav-item"><a href="equipa.html" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Portugal</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Partnerships</a></li>
             </ul>
 
             <div class="login-button">
@@ -99,24 +94,35 @@
                 
                 <div class="textCompany">
 
-                    <h1><i class="fa-solid fa-building-user"></i></h1>
-                    <h1>Our Company</h1>
-                    <p>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Velit consequuntur, aperiam mollitia itaque cum temporibus est quo quae architecto odit 
-                       fugiat debitis non amet obcaecati, eveniet animi laboriosam eaque natus? Aspernatur magni 
-                       minus incidunt quasi fugiat maxime iusto facilis beatae sit vel ipsam, distinctio atque consequuntur autem, 
-                       accusamus unde quo aut dolorem, nostrum quaerat. Placeat adipisci modi quia amet voluptatibus vero debitis officiis, 
-                       atque sed quaerat neque saepe provident, ea aperiam architecto cupiditate quos quam doloribus eligendi, dicta assumenda rerum. 
-                       Velit non vel autem incidunt, debitis earum saepe sed quae cumque quisquam blanditiis distinctio a quasi alias delectus! 
-                       Hic quam illum voluptates reiciendis iste obcaecati placeat quae exercitationem, doloremque, vitae incidunt. 
-                       Accusantium animi blanditiis eveniet voluptatem corporis! 
-                       Eveniet cumque hic deserunt optio doloribus veritatis repudiandae magnam nesciunt quos provident, culpa natus fuga suscipit accusamus iste impedit magni quae?
-                       Velit debitis sint animi ea ducimus cumque perspiciatis a! Cupiditate, dignissimos tenetur pariatur reiciendis tempora sint iure numquam similique totam maiores corrupti quasi, 
-                       laborum perferendis sed natus magnam sequi expedita repellat recusandae, neque quo nam necessitatibus ipsam inventore? Quia, saepe sint ipsam harum modi dolorem recusandae 
-                       a, provident, explicabo ipsa illo. Exercitationem maiores distinctio praesentium, tenetur optio porro commodi atque laudantium fuga.
-    
-                    </p>
+                    <div class="left">
+                        
+                        <img src="img/about/company.png" alt="">
+
+                    </div>
+
+                    <div class="right">
+
+                        <h1>
+                            Our Company
+                        </h1>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Velit consequuntur, aperiam mollitia itaque cum temporibus est quo quae architecto odit 
+                        fugiat debitis non amet obcaecati, eveniet animi laboriosam eaque natus? Aspernatur magni 
+                        minus incidunt quasi fugiat maxime iusto facilis beatae sit vel ipsam, distinctio atque consequuntur autem, 
+                        accusamus unde quo aut dolorem, nostrum quaerat. Placeat adipisci modi quia amet voluptatibus vero debitis officiis, 
+                        atque sed quaerat neque saepe provident, ea aperiam architecto cupiditate quos quam doloribus eligendi, dicta assumenda rerum. 
+                        Velit non vel autem incidunt, debitis earum saepe sed quae cumque quisquam blanditiis distinctio a quasi alias delectus! 
+                        Hic quam illum voluptates reiciendis iste obcaecati placeat quae exercitationem, doloremque, vitae incidunt. 
+                        Accusantium animi blanditiis eveniet voluptatem corporis! 
+                        Eveniet cumque hic deserunt optio doloribus veritatis repudiandae magnam nesciunt quos provident, culpa natus fuga suscipit accusamus iste impedit magni quae?
+                        Velit debitis sint animi ea ducimus cumque perspiciatis a! Cupiditate, dignissimos tenetur pariatur reiciendis tempora sint iure numquam similique totam maiores corrupti quasi, 
+                        laborum perferendis sed natus magnam sequi expedita repellat recusandae, neque quo nam necessitatibus ipsam inventore? Quia, saepe sint ipsam harum modi dolorem recusandae 
+                        a, provident, explicabo ipsa illo. Exercitationem maiores distinctio praesentium, tenetur optio porro commodi atque laudantium fuga.
+        
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -133,7 +139,7 @@
                     <div class="card-container">
 
                         <span class="pro">CEO</span>
-                        <img class="round" src="img/Logo.png" alt="user"/>
+                        <img class="round" src="img/menuImages/Logo.png" alt="user"/>
                         <h3>Daniel</h3>
 
                         <div class="buttons">

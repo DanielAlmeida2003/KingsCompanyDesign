@@ -43,19 +43,20 @@ header{
     padding: 1px;
     padding-top: 10px;
     font-size: 12px;
-    text-align: center;
+    text-align: right;
     padding-right: 70px;
 }
 
-header a{
-    text-decoration: none;
-    color: white;
+header img{
+    width: 25px;
+    height: 12px;
     padding-right: 5px;
+    filter: grayscale(100%);
     transition: 0.2s ease-in-out;
 }
 
-header a:hover{
-    color: #ffc400;
+header img:hover{
+    filter: grayscale(0%);
 }
 
 /*Menu*/
@@ -115,6 +116,7 @@ header a:hover{
 }
 
 .nav-link:hover{
+    text-shadow: 1px 1px 10px #ffc400;
     color: #ffc400;
 }
 
@@ -128,7 +130,7 @@ header a:hover{
 .login-button a button {
     font-weight: bold;
     border: none;
-    padding: 25px 30px;
+    padding: 15px 20px;
     border-radius: 5px;
     background-color: #ffc400;
     border: 2px solid #ffc400;
@@ -138,6 +140,7 @@ header a:hover{
 
 .login-button a button:hover{
     color: #ffc400;
+    text-shadow: 1px 1px 10px #ffc400;
     background-color: #1d1d1d;
     
 }
@@ -145,6 +148,7 @@ header a:hover{
 .mobile-menu-icon {
     display: none;
     margin-top: 20px;
+   
 }
 
 .mobile-menu {

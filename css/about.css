@@ -7,18 +7,41 @@ body{
     position: relative;
 }
 
-
-
 header {
-    background-color: #1d1d1d;
+    background-color: white;
+}
+
+.login-button a button{
+    margin-top: 10px;
 }
 
 .nav-bar{
-    background-color: #1d1d1d;
+
+    background-color: white;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+
+
+}
+.nav-link{
+    color: #1d1d1d;
 }
 
+.mobile-menu-icon {
+ 
+  color: black;
+    
+}
+
+#icon{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
 .mobile-menu{
-    background-color: #1d1d1d;
+    background-color: white;
+    color: #1d1d1d;
 }
 
 .bottom{
@@ -27,40 +50,86 @@ header {
     position: relative;
 }
 
-.introCompany{
-    padding: 5%;
-    padding-top: 7%;
-    padding-bottom: 2%;
-}
+
 
 .textCompany{
     
-    background-color: white;
+    background-color: rgb(247, 247, 247);
     color: black;
-    border: 2px solid black;
-    padding: 5%;
+    padding: 4%;
+    display: flex;
     text-align: center;
-    border-radius: 20px;
-    box-shadow: 1px 1px 50px grey;
-
-}
-
-.textCompany i{
+    height: 700px;
     
-    font-size: 100px;
+    box-shadow: 3px 25px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 25px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 25px 30px 0px rgba(0,0,0,0.75);
+
+}
+
+.textCompany .left{
+    
+    width: 40%;
+
+}
+
+.textCompany .left img{
+    width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit: cover;
+    box-shadow: 1px 1px 10px grey;
+    animation: slide-left 1s;
+    opacity: 1;
+}
+
+.textCompany .right{
+    padding: 0px 0px 0px 30px;
+    width: 60%;
+}
+.textCompany .right h1{
+
+    color: #ac8b1f;
+    text-align: left;
+
     margin-bottom: 20px;
+    font-size: 40px;
+    animation: showText 3s;
+
 }
 
-.textCompany h1{
-    margin-bottom: 10px;
-}
 
-.textCompany p{
+.textCompany .right p{
+    animation: showText 3s;
     text-align: justify;
 }
 
+@keyframes slide-left {
+    
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+}
+
+@keyframes showText {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
+}
+
 .team{
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(247, 247, 247);
     padding: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -230,9 +299,29 @@ button.primary.ghost:hover{
 
 @media screen and (max-width: 919px) {
 
-    .introCompany{
-        padding: 15%;
+    .textCompany{
+        
+        display: block;
+        height: auto;
+        padding: 25px;
     }
+
+    .textCompany .left{
+        width: 100%;
+        padding: auto;
+        padding-top: 20px;
+    }
+
+    .textCompany .right{
+        width: 100%;
+        padding: 0px;
+        padding-top:10px ;
+    }
+    .textCompany .right h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
 
 }
 

@@ -1,49 +1,73 @@
+.content{
+    background-color: white;
+}
 
 .contentFunc{
 
-    margin: auto;
+    display: flex;
     width: 80%;
-    padding: 10px;
-    text-align: center;
-    
+    padding: 40px;
 }
 
-.minTitle{
+.profile{
 
-    text-align: center;
-    padding: 10px;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    font-weight: lighter;
-    margin-top: 30px;
-
-}
-.title{
-
-    color: #b9963e;
-    text-align: center;
-    padding: 10px;
-    font-size: 60px;
-}
-
-.profileImage{
-
-    text-align: center;
-    margin: auto;
-    border:5px solid #b9963e;
-    border-radius: 100%;
-    width: 300px;    
-    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
-.contentFunc p{
+.profile .left{
+    width: 80%;
+    animation: slide-right 1s;
+    opacity: 1;
+}
 
-    margin: 20px;
+.profile .left h2{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.profile .left h5{
+    margin-bottom: 10px;
+}
+
+.profile .left .desc{
     text-align: justify;
-    padding: 50px;
-    background-color: rgb(179, 179, 179);
-    border-radius: 5px;
+    font-size: 15px;
+}
+
+.profile .right{
+    width: 20%;
+    animation: slide-right 1s;
+    opacity: 1;
+}
+
+
+@keyframes slide-right {
+
+    100%{
+
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-left {
+
+    0% {
+        left: 100%;
+      }
+      50% {
+        left: 0%;
+      }
+      100% {
+        left: 0;    
+      }
 
 }
 
@@ -51,25 +75,88 @@
     padding: 10px;
 }
 
-.socialMedia .iconSocialMedia a{
-    text-decoration: none;
-    color: black;
+@media screen and (max-width: 941px) {
+
+    .contentFunc{
+        width: 100%;
+        padding: 40px;
+    }
+
+
+
+    .profile .left{
+        width: 100%;
+    }
+
+    .profile .right{
+        width: 100%;
+    }
+
+    .profile .right img{
+        width: 100%; /* or any custom size */
+        height: 100%; 
+        object-fit: cover;
+        animation: slide-right 1s;
+        opacity: 1;
+    }
+
 }
+
+@media screen and (max-width: 919px) {
+
+    .profile .left{
+        width: 100%;
+    }
+
+    .profile .right{
+        width: 100%;
+    }
+
+}
+
+
+
+.socialMedia .iconSocialMedia a{
+
+    text-decoration: none;
+
+    color: black;
+
+}
+
+
 
 .socialMedia .iconSocialMedia a i{
 
+
+
     padding: 10px;
+
     border-radius: 5px;
+
     background-color: #b9963e;
+
     font-size: 20px;
+
     transition: .3s ease-in;
 
+
+
 }
+
+
 
 .socialMedia .iconSocialMedia a i:hover{
 
+
+
     color: #b9963e;
+
     background-color: black;
 
+
+
 }
+
+
 

@@ -1,327 +1,628 @@
 body{
+
     overflow: visible;
+
 }
+
+
 
 .content{
+
     background-color: #ccc;
+
     position: relative;
+
 }
+
+
 
 header {
-    background-color: white;
+
+    background-color: rgb(15, 15, 15);
+
 }
 
+
+
 .login-button a button{
+
     margin-top: 10px;
+
 }
+
+
 
 .nav-bar{
 
-    background-color: white;
-    border-top: 1px solid whitesmoke;
-    border-bottom: 1px solid whitesmoke;
-
+    background-color: #1d1d1d;
 
 }
+
 .nav-link{
-    color: #1d1d1d;
+
+    color: white;
+
 }
+
+
 
 .mobile-menu-icon {
- 
-  color: black;
-    
+
+    color: black;
+
 }
 
+
+
 #icon{
+
     font-size: 20px;
+
     margin-top: 15px;
+
 }
+
+
+
 
 
 .mobile-menu{
-    background-color: white;
+
+    background-color: #1d1d1d;
+
     color: #1d1d1d;
+
 }
 
+
+
 .bottom{
+
     bottom: 0;
+
     display: block;
+
     position: relative;
+
 }
+
+
+
+
 
 
 
 .textCompany{
+
     
+
     background-color: rgb(247, 247, 247);
+
     color: black;
+
     padding: 4%;
+
     display: flex;
+
     text-align: center;
-    height: 700px;
+
+    height: 90vh;
+
     
+
     box-shadow: 3px 25px 10px 0px rgba(0,0,0,0.75);
+
     -webkit-box-shadow: 3px 25px 30px 0px rgba(0,0,0,0.75);
+
     -moz-box-shadow: 3px 25px 30px 0px rgba(0,0,0,0.75);
 
+
+
 }
+
+
 
 .textCompany .left{
+
     
+
     width: 40%;
+
+
 
 }
 
+
+
 .textCompany .left img{
+
     width: 100%; /* or any custom size */
     height: 100%; 
     object-fit: cover;
     box-shadow: 1px 1px 10px grey;
     animation: slide-left 1s;
     opacity: 1;
+
 }
+
+
 
 .textCompany .right{
+
     padding: 0px 0px 0px 30px;
+
     width: 60%;
+
 }
+
 .textCompany .right h1{
 
-    color: #ac8b1f;
+
+
+    
+
     text-align: left;
 
+
+
     margin-bottom: 20px;
+
     font-size: 40px;
+
     animation: showText 3s;
 
+
+
 }
+
+
+
 
 
 .textCompany .right p{
+
     animation: showText 3s;
+
     text-align: justify;
+
 }
 
+
+
 @keyframes slide-left {
-    
+
     100%{
+
         transform: translateX(0%);
         opacity: 1;
+
     }
+
     0%{
+
         transform: translateX(100%);
         opacity: 0;
     }
 
 }
 
+
+
 @keyframes showText {
 
+
+
     0%{
+
         opacity: 0;
+
     }
+
+
 
     100%{
+
         opacity: 1;
+
     }
+
     
+
 }
+
+
+
+.line{
+
+        background-color: rgb(255, 255, 255);
+
+        height: 3px;
+
+}
+
+
 
 .team{
+
     background-color: rgb(247, 247, 247);
+
     padding: 5%;
+
     padding-top: 1%;
+
     padding-bottom: 1%;
+
     text-align: center;
 
+
+
 }
+
+
 
 .team h1{
 
-    color: rgb(143, 110, 14);
+
+
+    
+
     margin-bottom: 20px;
+
     font-size: 3rem;
+
 }
+
+
+
+.team .revealUp {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+}
+
+
 
 .team h3{
 
+
+
     font-weight: 100;
 
+
+
 }
+
+
 
 .team .func{
 
+
+
     display: flex;
+
     color: white;
+
     width: 100%;
+
     flex-wrap: wrap;
+
     justify-content: center;
+
     align-items: center;
 
+
+
 }
+
+
 
 .team .func .card-container {
+
     
-    background-color: white;
-    border-radius: 20px;
-    border: 2px solid black;
+
+    background-color: rgb(236, 236, 236);
+
     box-shadow: 1px 1px 20px grey;
+
     color: black;
+
     padding-top: 30px;
+
     position: relative;
+
     width: 500px;
+
     max-width: 100%;
+
     color: white;
+
     text-align: center;
+
     display: inline;
+
     margin: 20px;
+
     font-size: 20px;
+
     
+
 }
+
+
 
 .team .func .card-container .pro {
+
     color:black;
-    background-color: #FEBB0B;
+
+    background-color: #ac8b1f;
+
     border-radius: 3px;
+
     font-size: 14px;
+
     font-weight: bold;
+
     padding: 3px 7px;
+
     position: absolute;
+
     top: 30px;
+
     left: 30px;
+
     
+
 }
+
+
 
 .team .func .card-container h3{
+
     color: black;
+
     font-weight: bold;
+
 }
+
+
 
 .team .func .card-container .round {
+
     
+
     border-radius: 50%;
+
     padding: 7px;
+
     width: 200px;
 
-}
-.buttons{
-    margin-top: 30px;
+
+
 }
 
+.buttons{
+
+    margin-top: 30px;
+
+}
+
+
+
 button.primary {
+
     font-weight: bold;
-    background-color: #ffc400;
-    border: 1px solid #2b2b2b;
-    border-radius: 3px;
-    color: #231E39;
-    font-family: Montserrat, sans-serif;
+    background-color: #ac8b1f;
+    color: black;
     font-weight: 500;
     padding: 10px 25px;
     cursor: pointer;
     transition: 0.3s ease-in-out ;
+
 }
+
+
 
 button.primary:hover{
-    background-color: black;
-    color: #FEBB0B;
+
+    background-color: #1d1d1d;
+
+    color: #ac8b1f;
+
+
 
 }
+
+
 
 button.primary.ghost {
+
     background-color: transparent;
+
     color: #ac8b1f;
+
     border-color: #ac8b1f;
+
 }
+
+
 
 button.primary.ghost:hover{
+
     background-color: #ac8b1f;
+
     color: black;
+
 }
+
+
 
 .skills {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+
     background-color: #ac8b1f;
+
     text-align: left;
+
     padding: 15px;
+
     margin-top: 30px;
+
     color: black;
+
 }
+
+
 
 .skills ul {
+
     list-style-type: none;
+
     margin: 0;
+
     padding: 0;
+
 }
+
+
 
 .skills ul li {
+
     border: 1px solid #000000;
+
     border-radius: 2px;
+
     display: inline-block;
+
     font-size: 12px;
+
     margin: 0 7px 7px 0;
+
     padding: 7px;
+
     
+
 }
+
+
 
 .skills ul .icons {
+
   border: none;
+
   border-radius: 100%;
+
   display: inline-block;
+
   margin: 0;
+
   padding: 0;
 
+
+
 }
+
+
 
 .skills .theList{
+
   text-align: right;
+
 }
+
+
 
 .skills ul .icons a{
+
   
+
   text-decoration: none;
+
   color: black;
 
+
+
 }
 
+
+
 .skills ul .icons a i{
+
   font-size: 15px;
+
   width: 20px;
+
   opacity: 1;
+
   padding: 0px;
+
   transition: 0.3s;
+
 }
+
 .skills ul .icons a i:hover{
+
   opacity: 0.5;
+
 }
+
+
+
 
 
 @media screen and (max-width: 919px) {
 
+
+
     .textCompany{
+
         
+
         display: block;
+
         height: auto;
+
         padding: 25px;
+
     }
+
+
 
     .textCompany .left{
+
         width: 100%;
+
         padding: auto;
+
         padding-top: 20px;
+
     }
 
+
+
     .textCompany .right{
+
         width: 100%;
+
         padding: 0px;
+
         padding-top:10px ;
+
     }
+
     .textCompany .right h1{
+
         font-size: 30px;
+
         text-align: center;
+
     }
+
+
+
 
 
 }
+
+
 

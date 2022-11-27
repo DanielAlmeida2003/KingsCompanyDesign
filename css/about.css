@@ -1,50 +1,29 @@
 body{
-
     overflow: visible;
-
 }
-
-
 
 .content{
 
-    background-color: white;
+    background-color: #ccc;
 
     position: relative;
-
 }
-
-
 
 header {
-
     background-color: rgb(15, 15, 15);
-
 }
-
-
 
 .login-button a button{
-
     margin-top: 10px;
-
 }
 
-
-
 .nav-bar{
-
     background-color: #1d1d1d;
-
 }
 
 .nav-link{
-
     color: white;
-
 }
-
-
 
 .mobile-menu-icon {
 
@@ -52,24 +31,16 @@ header {
 
 }
 
-
-
 #icon{
 
     font-size: 20px;
-
     margin-top: 15px;
 
 }
 
-
-
-
-
 .mobile-menu{
 
     background-color: #1d1d1d;
-
     color: #1d1d1d;
 
 }
@@ -79,56 +50,35 @@ header {
 .bottom{
 
     bottom: 0;
-
     display: block;
-
     position: relative;
 
 }
 
+.nav-bar {
 
+    box-shadow: 0px 10px 20px 5px rgba(250, 192, 0, 0.4);
 
-
-
-
+}
 
 .textCompany{
 
-    
-
-    background-color: rgb(247, 247, 247);
 
     color: black;
-
     padding: 4%;
-
     display: flex;
-
     text-align: center;
-
-    height: 90vh;
-
-    
-
+    min-height: 90vh;
     box-shadow: 3px 25px 10px 0px rgba(0,0,0,0.75);
-
     -webkit-box-shadow: 3px 25px 30px 0px rgba(0,0,0,0.75);
-
     -moz-box-shadow: 3px 25px 30px 0px rgba(0,0,0,0.75);
-
-
-
 }
 
 
 
 .textCompany .left{
-
     
-
     width: 40%;
-
-
 
 }
 
@@ -150,7 +100,6 @@ header {
 .textCompany .right{
 
     padding: 0px 0px 0px 30px;
-
     width: 60%;
 
 }

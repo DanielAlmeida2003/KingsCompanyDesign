@@ -1,21 +1,15 @@
 
 
 * {
-
     padding: 0;
-
     margin: 0;
-
     font-family:"Montserrat";
-
     box-sizing: border-box;
-
 }
 
 
 
 body{
-
     overflow: hidden;
 
 }
@@ -43,56 +37,28 @@ body{
 }
 
 
-
-
-
-
-
 .backgroundVideo {
 
   position: fixed;
-
   right: 0;
-
   bottom: 0;
-
   min-width: 100%; 
-
   z-index: -1;
-
   min-height: 100%;
 
 }
 
-
-
-
-
 /*Cabeçalho*/
-
-
 
 header{
 
-
-
     background-color: rgb(15, 15, 15, 0.9);
-
-    
-
     padding: 1px;
-
     padding-top: 10px;
-
     font-size: 12px;
-
     text-align: right;
-
     padding-right: 70px;
-
-
-
-
+    
 
 }
 
@@ -101,13 +67,9 @@ header{
 header img{
 
     width: 25px;
-
     height: 12px;
-
     padding-right: 5px;
-
     filter: grayscale(100%);
-
     transition: 0.2s ease-in-out;
 
 }
@@ -120,57 +82,39 @@ header img:hover{
 
 }
 
-
-
 /*Menu*/
-
-
 
 .nav-bar {
 
     z-index: 1;
-
     background-color: rgb(29, 29, 29,0.9);
-    box-shadow: 0px 20px 34px 5px rgba(250, 192, 0, 0.3);
+
+    
+
+    
+
     width: 100%;
-
     display: flex;
-
     justify-content: space-between;
-
     padding: 1rem 4rem;
-
     font-weight: bold;
-
     transition: .3s ease-in;
+    box-shadow: 0px 20px 34px 5px rgba(250, 192, 0, 0.3);
 
-
-
-}
-
-
-
-
+}   
 
 .logo {
 
     display: flex;
-
     align-items: center;
 
 }
-
-
 
 .logo img{
 
     width: 110px;
 
 }
-
-
-
-
 
 .nav-list {
 
@@ -185,11 +129,7 @@ header img:hover{
 .nav-list ul {
 
     display: flex;
-
     justify-content: center;
-
-    
-
     list-style: none;
 
 }
@@ -200,8 +140,6 @@ header img:hover{
 
     margin: 0 15px;
 
-    
-
 }
 
 
@@ -209,8 +147,6 @@ header img:hover{
 
 
 .active{
-
-
 
     color: #ffc400;
 
@@ -221,11 +157,8 @@ header img:hover{
 .nav-link {
 
     text-decoration: none;
-
     color: white;
-
     font-weight: bold;
-
     transition: .3s all ease-in-out;
 
 }
@@ -235,7 +168,6 @@ header img:hover{
 .nav-link:hover{
 
     text-shadow: 1px 1px 10px #ffc400;
-
     color: #ffc400;
 
 }
@@ -286,12 +218,8 @@ header img:hover{
 .login-button  a {
 
     text-decoration: none;
-
     color: black;
-
     font-weight: bold;
-
-
 
 }
 
@@ -300,47 +228,30 @@ header img:hover{
 .login-button a button {
 
     font-weight: bold;
-
     border: none;
-
     padding: 15px 20px;
-
     border-radius: 5px;
-
     background-color: #ffc400;
-
     border: 2px solid #ffc400;
-
     transition: .3s ease-in-out;
-
     cursor: pointer;
 
 }
 
-
-
 .login-button a button:hover{
 
     color: #ffc400;
-
     text-shadow: 1px 1px 10px #ffc400;
-
     background-color: #1d1d1d;
-
     
-
 }
 
 
 
 #icon{
 
-
-
     font-size: 20px;
-
     margin-top: 20px;
-
     color: white;
 
 }
@@ -350,10 +261,7 @@ header img:hover{
 .mobile-menu-icon {
 
     display: none;
-
     margin-top: 20px;
-
-   
 
 }
 
@@ -362,12 +270,8 @@ header img:hover{
 .mobile-menu {
 
     display: none;
-
     background-color: #1d1d1d;
-
     z-index: 100;
-
- 
 
 }
 
@@ -379,31 +283,16 @@ header img:hover{
 
 main .centerred{
 
-
-
     position: absolute;
-
     width: auto;
-
     height: auto;
-
     padding: 20px;
-
-
-
     border-left:2px solid white;
-
     top: 50%;
-
     left: 50%;
-
     transform: translate(-50%, -50%);
-
     color: white;
-
     z-index: 99;
-
-
 
 }
 
@@ -424,12 +313,8 @@ main .centerred h1{
 main  a {
 
     text-decoration: none;
-
     color: black;
-
     font-weight: bold;
-
-
 
 }
 
@@ -437,32 +322,16 @@ main  a {
 
 main a button {
 
-
-
     font-weight: bold;
-
     border: none;
-
     padding: 15px 20px;
-
     margin-top: 20px;
-
-
-
     border-radius: 5px;
-
-    background-color: transparent;
-
+    background-color: white;
     border: 2px solid white;
-
     transition: .3s ease-in-out;
-
-
-
     width: 200px;
-
-    color: white;
-
+    color: black;
     cursor: pointer;
 
 }
@@ -471,42 +340,22 @@ main a button {
 
 main a button:hover{
 
-
-
-    color: #1d1d1d ;
-
-    background-color: white;
-
-    
+    color: white ;
+    background-color:transparent;    
 
 }
 
-
-
 /*Whatsapp*/
-
-
 
 .float{
 
-
-
 	position:fixed;
-
 	width:60px;
-
 	height:60px;
-
 	bottom:40px;
-
 	right:40px;
-
-    
-
 	text-decoration: none;
-
     z-index:100;
-
     transition: .1s ease-in;
 
 }
@@ -549,17 +398,9 @@ main a button:hover{
 
 .footer{
 
-
-
     background-color: #1d1d1d;
-
     padding:10px 0px;
-
-    font-family: 'Play', sans-serif;
-
     text-align:center;
-
-
 
 }
 
@@ -568,9 +409,7 @@ main a button:hover{
 .bottom{
 
     bottom: 0;
-
     position: fixed;
-
     width:100%;
 
 }
@@ -580,13 +419,9 @@ main a button:hover{
 .footer .row{
 
     width:100%;
-
     margin:1% 0%;
-
     padding:0.05% 0%;
-
     color:white;
-
     font-size:13px;
 
 }
@@ -596,14 +431,8 @@ main a button:hover{
 .footer .row a{
 
     text-decoration:none;
-
     color:white; 
-
     transition:0.5s;
-
-    
-
-
 
 }
 
@@ -611,18 +440,11 @@ main a button:hover{
 
 .footer .row a i{
 
-
-
     border-radius: 100%;
-
     padding: 10px;
-
     width: 49px;
-
     background-color: white;
-
-    color:black;
-
+    color:#b9963e;
     transition:0.5s;
 
 }
@@ -631,7 +453,7 @@ main a button:hover{
 
 .footer .row a:hover{
 
-    color:#b9963e;
+    color:black;
 
  }
 
@@ -639,7 +461,7 @@ main a button:hover{
 
  .footer .row i:hover{
 
-    color:#b9963e;
+    color:black;
 
  }
 

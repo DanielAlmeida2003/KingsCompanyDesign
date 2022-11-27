@@ -1,0 +1,131 @@
+.headerIntroCompany{
+
+    padding: 50px;
+    padding-top: 50px;
+}
+
+.headerIntroCompany h1{
+    margin-bottom: 10px;
+}
+
+.headerIntroCompany hr{
+    margin-bottom: 30px;
+    height: 3px;
+    background-color: #ffc400;
+}
+
+.accordion {
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: #1d1d11;
+    color: #ccc;
+    text-decoration: inherit;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    border-bottom: 1px solid rgb(46, 46, 46);
+
+}
+  
+.active, .accordion:hover {
+    text-shadow: 1px 1px 10px #ffc400;
+    color:#ffc400;
+    
+}
+
+.accordion:after {
+
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+
+    padding: 0 18px 0px 0px;
+    background-color: white;
+    max-height: 0;
+    margin: 10px;
+    overflow: hidden;
+    text-align: justify;
+    transition: max-height 0.2s ease-out;
+
+}
+
+.panel div{
+
+    padding: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.panel div div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-top: 20px;
+    padding: 0;
+}
+
+
+
+.panel div div figure {
+    float: right;
+    width: 33%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 13px;
+    text-indent: 0;
+    margin-bottom: 10px;
+    
+    
+}
+
+.panel div div figure figcaption{
+    margin-top: 5px;
+    
+}
+
+.panel div div figure figcaption a {
+    padding: 10px;
+   
+}
+
+.panel div div figure figcaption a button{
+   
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #1d1d11;
+    border: 2px solid #1d1d11;
+
+}
+
+.panel div div figure figcaption a button:hover{
+    text-shadow: 1px 1px 10px #ffc400;
+    color: #ffc400;
+}
+
+.panel div div figure .containerImage{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.panel div div figure img.scaled {
+    width: 100%;
+    box-shadow: 1px 1px 15px grey;
+
+}

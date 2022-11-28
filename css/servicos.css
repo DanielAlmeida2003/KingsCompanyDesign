@@ -24,59 +24,22 @@
 
 }
 
-.accordion {
-
-    border: 2px solid grey;
-    border-radius: 5px;
-    background-color: rgb(245, 245, 245);
-    color: #b9963e;
-    text-decoration: inherit;
-    cursor: pointer;
-    padding: 15px;
-    width: 100%;
+.headerIntroCompany .serviceTitle{
     text-align: center;
-    outline:none;
-    font-size: 20px;
-    transition: 0.4s;
-    
-}
-  
-.active, .accordion:hover {
-    text-shadow: 1px 1px 10px black;
-    color:black;
-    
-}
-
-.accordion:after {
-
-    content: '\002B';
-    color: #777;
+    padding: 15px;
     font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
+    text-shadow: 1px 1px 10px #b9963e;
+    color: black;
 
-.active:after {
-    content: "\2212";
-}
-
-.panel {
-
-    padding: 0 18px 0px 0px;
-    background-color: white;
-    max-height: 0;
-    margin: 10px;
-    overflow: hidden;
-    text-align: justify;
-    transition: max-height 0.2s ease-out;
 
 }
 
-.panel  p{
-
+.headerIntroCompany .descriptionTitle{
     padding-top: 20px;
     padding-bottom: 20px;
-
+    text-align: justify;
+    font-size: 15px;
+    animation:  slide-left .7s ;
 }
 
 .containerImage {
@@ -100,21 +63,12 @@
 
 .containerImage .item span{
 
-    position: absolute;
-	bottom: -20px;
-	left: 0;
-	z-index: -1;
-	display: block;
-	width: 300px;
-	margin: 0;
-	padding: 0;
-	color: #444;
-	font-size: px;
-	text-decoration: none;
-	text-align: center;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	opacity: 0;
+    text-align: justify;
+    text-shadow: 1px 1px 10px #b9963e;
+    color: #b9963e;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
 
 }
 
@@ -124,12 +78,14 @@
     width: 100%;
     height: 300px;
     object-fit: cover;
-    filter: grayscale(70%);    
+    filter: grayscale(70%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px grey;    
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-    margin-bottom: 10px;
+    
 }
 
 .containerImage .item figure:hover+span {
@@ -138,8 +94,39 @@
 }
 
 .containerImage .item figure:hover .image{
-
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
     filter: grayscale(0%);
+}
+
+.containerImage .item span p{
+    display: inline;
+    vertical-align: middle;
+}
+
+.containerImage .item span .HyperButton{
+    color: black;
+    margin-left: 10px;
+}
+
+.containerImage .item span .HyperButton button{
+    background-color: #b9963e;
+    width: auto;
+    padding: 10px;
+    border: 2px solid #b9963e;
+    
+}
+
+.containerImage .item span .HyperButton button:hover{
+    background-color: white;
+    color: #b9963e;
+    
+}
+
+@media screen and (max-width:919px) {
+
+    .containerImage .item{
+        width: 100%;
+    }
+
 }

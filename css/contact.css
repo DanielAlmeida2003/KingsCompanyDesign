@@ -1,7 +1,18 @@
+
+main h1{
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+main hr{
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid #1d1d11;
+}
+
 .introContacts{
     min-height: 90vh;
-    padding: 100px;
-    
+    padding: 50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -45,8 +56,85 @@
     border-left: 0px;
 }
 
-.right .contactForm{
+.right  h3{
+
+    padding-left: 20px;
+
+}
+
+.right .contactForm {
+
+    padding: 20px;
+    padding-top: 5px;
     
+}
+
+.right .contactForm .formItem{
+    position: relative;
+    border:1px solid #353434;
+    border-radius: 5px;
+    padding: 0 8px;
+    margin-top:20px;
+    transition: .3s all ease-in-out;
+}
+
+.right .contactForm .formItem label{
+    position: absolute;
+    font-size: 14px;
+    transform: translate(0, 14px) scale(1);
+    transition: all .1s ease-in-out;
+    transform-origin: top left;
+
+}
+
+.right .contactForm .formItem.active label{
+    transform: translate(0, 4px) scale(.75);
+    color: #1d1d11;
+}
+
+.right .contactForm .formItem input{
+    width: 100%;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    padding: 20px 0 10px;
+    border: none;
+    
+}
+
+.right .contactForm .submit{
+
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #b9963e;
+    outline: none;
+    cursor: pointer;
+    border-width: 1px;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+
+}
+
+.right .contactForm .submit:hover{
+    background-color: #1d1d11;
+    color: #b9963e;
+}
+
+.right .contactForm .alert{
+
+    display: none;
+    
+}
+
+.right .contactForm .formItem textarea{
+    width: 100%;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    padding: 20px 0 10px;
+    border: none;
+    resize: none;
 }
 
 

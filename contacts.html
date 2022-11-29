@@ -189,7 +189,36 @@
 
                 <div class="right">
 
-                    dasdsad
+                    <form class="contactForm" action="/contactos" method="Post">
+
+                        <div class="alert">
+                                <span class="closebtn">&times;</span>
+                                
+                        </div>
+                                                            
+                        <div class="alert success">
+                                <span class="closebtn">&times;</span>
+                        </div>
+                                                                
+                        <label class="labelsForm"> Name (*): </label>
+                        <input type="text" name="nome" placeholder="Enter your name" require>
+                        
+                        <label class="labelsForm"> Phone Number: </label>
+                        <input type="text" name="phoneNumber" placeholder="Enter your phone number" >
+                        
+                        <label class="labelsForm"> Email (*):</label>
+                        <input type="text" name="email" placeholder="Enter your email" require>
+
+                        <label class="labelsForm"> Subject (*):</label>
+                        <input type="text" name="subject" placeholder="Enter your email" require>
+                        
+                        <label class="labelsForm"> Message (*):</label>
+                        <textarea name="message" placeholder="Enter your message" require></textarea>
+
+                        <input type="submit" value="Send Email">
+
+
+                </form>
 
                 </div>
 
